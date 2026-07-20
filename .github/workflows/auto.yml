@@ -5,6 +5,9 @@ on:
     - cron: '0 * * * *'
   workflow_dispatch:
 
+permissions:
+  contents: write # Grants the token read/write permissions for the repo code
+
 jobs:
   build:
     runs-on: ubuntu-latest
